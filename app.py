@@ -5,7 +5,8 @@ import plotly.express as px
 from channel_videos import get_uploads_playlist_id, get_video_data
 
 # --- API Key ---
-API_KEY = "AIzaSyAC-CD0yKr8MhvBvbE6Lk7vx9CfwfjCqg8"  # Replace with your valid API key
+API_KEY = st.secrets["API_KEY"]
+ # Replace with your valid API key
 
 # --- Streamlit App ---
 st.set_page_config(page_title="📊 YouTube Channel Dashboard", layout="wide")
